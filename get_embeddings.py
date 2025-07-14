@@ -22,7 +22,7 @@ REGION="us-central1"
 
 # --------------------------------------------------------
 import vertexai
-from vertexai.language_models import TextEmbeddingModel, TextEmbeddingInput
+from vertexai.language_models import TextEmbeddingModel
 
 # initialize vertex
 vertexai.init(
