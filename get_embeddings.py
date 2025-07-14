@@ -7,7 +7,7 @@ from google.auth.transport.requests import Request
 from google.oauth2.service_account import Credentials 
 
 # Path to the Json key 
-key_path = "/Users/ugurekinci/Documents/Vertex_AI/vertex-ai-465718-b7ad113c10f1.json"
+key_path = "/Users/ugurekinci/Downloads/vertex-ai-465718-b7ad113c10f1.json"
 
 # Create credentials object
 credentials = Credentials.from_service_account_file(
@@ -34,18 +34,14 @@ embedding_model = TextEmbeddingModel.from_pretrained(
     "text-embedding-005"
 )
 
-inputs = [
-    TextEmbeddingInput(
-        "Merhaba dünya", "RETRIEVAL_DOCUMENT")
-]
+embedding = embedding_model.get_embeddings(["Hello"])
 
-embedding = embedding_model.get_embeddings(
-    inputs
-)
+# print(embedding)
 
-print(embedding)
+# print(type(embedding))
 
+# print(len(embedding))
 
+# print(help(embedding[0]))
 
-
-
+print(len(embedding[0].values))
