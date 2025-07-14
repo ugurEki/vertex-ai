@@ -2,7 +2,7 @@ from google.auth.transport.requests import Request
 from google.oauth2.service_account import Credentials
 import vertexai
 
-api_key_path = "/Users/ugurekinci/Documents/Vertex_AI/vertex-ai-465718-b7ad113c10f1.json"
+api_key_path = "/Users/ugurekinci/Downloads/vertex-ai-465718-b7ad113c10f1.json"
 
 credentials = Credentials.from_service_account_file(
     api_key_path, scopes=["https://www.googleapis.com/auth/cloud-platform"]
