@@ -11,8 +11,6 @@ credentials = Credentials.from_service_account_file(
 PROJECT_ID = "vertex-ai-465718"
 REGION="us-central1"
 
-help(vertexai.init)
-
 # GCP ye ait olan Vertex AI platformunu kullanmak için Python ortamında bir başlangıç -
 # noktası oluşturur.
 # Bu metod, Vertex AI hizmetleriyle çalışmaya başlamadan önce gerekli kimlik doğrulama-
